@@ -1,7 +1,7 @@
 {
-  "name": "expack",
+  "name": "football",
   "version": "1.0.0",
-  "description": "Expack is the bare-bones Express and Webpack boilerplate with ES6+ babel transpilation, ESLint linting, Hot Module Reloading, and Jest test framework enabled.",
+  "description": "Football the bare-bones Express and Webpack boilerplate with ES6+ babel transpilation, ESLint linting, Hot Module Reloading, and Jest test framework enabled.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -14,7 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "@pixi/filter-glow": "^2.7.0",
+    "bcryptjs": "^2.4.3",
+    "firebase": "^7.21.1",
+    "pixi-filters": "^2.7.1"
   },
   "engines": {
     "node": ">=4.3.2"
@@ -48,6 +52,12 @@
     "webpack-cli": "^3.3.6",
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-reload": "^1.2.0"
   }
 }
