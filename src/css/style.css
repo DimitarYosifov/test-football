@@ -1,0 +1,98 @@
+/* @font-face { */
+    /* font-family: Girassol-Regular;
+    src: url(../fonts/Girassol-Regular.ttf); */
+/* } */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Girassol', cursive; */
+    /*font-family: 'Indie Flower', cursive;*/
+    /*font-family: 'Risque', cursive;*/
+}
+
+body {
+    background: red;
+}
+
+#wrapper input:not(#go) {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    /* border-radius: .3rem; */
+    display: none;
+    width: 100%;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    overflow: visible;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#go {
+    display: none;
+    background: transparent;
+    color: white;
+    font-size: 3em;
+    border: none;
+    right: 0%;
+    bottom: -50%;
+    font-weight: bold;
+    position: absolute;
+}
+
+#login {
+    display: none;
+    font-size: 1em;
+    border: none;
+    right: 0%;
+    bottom: -70%;
+    background: transparent;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+}
+
+#register {
+    display: none;
+    font-size: 1em;
+    border: none;
+    right: 0%;
+    bottom: -95%;
+    background: transparent;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+}
+
+#stage {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*    width: 450px;
+        height: 800px;*/
+}
+
+#wrapper {
+    box-sizing: border-box;
+}
+
+/* #proton_canvas {
+    position: absolute;
+    top: 0px
+} */
+
+
+
+/* @media screen and (orientation:landscape) {
+    body{
+        background: red; test
+    }
+}  */

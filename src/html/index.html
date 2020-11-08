@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Football</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Risque&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.6/pixi.js"></script>
+    <!-- <script src="libraries/PIXI.TextInput.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>-->
+    <!-- <script src="proton.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+    <canvas id='stage' style="  margin: 0 auto;"></canvas>
+    <!-- <canvas id="proton_canvas"></canvas> -->
+    <form id="wrapper"
+        style="display: block; position: absolute; top: 35%; left: 50%; transform: translate(-50%,-55%);">
+        <input id="username" class="form-control form-control-lg" type="text" placeholder="Username" autocomplete="on">
+        <input id="password" class="form-control form-control-lg" type="password" placeholder="Password"
+            autocomplete="on">
+        <button type="button" id="go">Go</button>
+        <button type="button" id="login">Login</button>
+        <button type="button" id="register">Register</button>
+    </form>
+
+    <!-- <script id="test" src="./js/App.mjs" type="module" crossorigin="crossorigin"></script> -->
+</body>
+
+<!-- 
+    test
+    TODO LIST:
+    DONE        fade effect between scenes
+    DONE        set font family to inputs also
+                change res.status codes in server.js
+                generateRandomBlock functio0on from levet to be in config
+    DONE        FIX CONFIG ERROR IN  LOGIN.JS!!!!
+    DONE        fix proton match coordinates
+    DONE-allowed not disabled          disable landscape
+    DONE        fillingcardspoint useless!!!!!!!!!!!
+    DONE        fix password asterisk problem...
+                config file!!
+    DONE        login btns
+    DONE        add font...
+                make name generator
+                moreplayers pics    
+                fillingcardspoints not to be a function but a class, plus createOpponentCards and createPlayerCards may be in there two. last two methods need optimization too redundant and hardcoded and messy
+                proton or pixi-particles...
+    DONE?       createPlayerCards  & createOpponentCards- these two methods to be in a separate class file 
+                along with setLevelBackground => setBackground so that it can be reusable from everywhere in the app
+    DONE        database-firebase probably
+    DONE?       fix drag!!! important!!!!
+    DONE?       node-server..
+    DONE        + pass and username
+    DONE?        mobile suport
+    DONE?       resize function
+    DONE?            git ignore
+                gulp, webpack and babel 
+                all events drag click etc  in sepatate file for reuse....events dispatcher?
+                fix dropshadow of texsts and texts onlandscape and small screen, they are blurry
+                check for possible match, if not possible - new grid
+                fix login form positioning for all devices
+                force app to go full screen for mobile devices
+                add webpack!!!
+                migrate to typescript !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    -->
+
+<!--       
+    INFO!!!!!!!!!
+            players' pics effect paint.net
+            photo->glow= 3/13/38,
+            photo=>vignette= 0/0/0.7/1,
+            width=90,
+            height= 160
+        
+        BALL COLORS:  
+               RED: ' config.defaultBlockColors.red'
+               BLUE: '3052FF'
+               GREEN: '2F7F07'
+               YELLOW: 'E2D841'
+               ORANGE 'FF9702'
+               PURPLE: 'B200FF'
+        
+        INSIDE "PUBLIC_HTML" FOLDER
+        npm install -g browser-sync                          //JUST ONCE IF NOT ALREADY INSTALLED
+    browser-sync start --server --index index.html-->
+
+<!--node server.js-->
+
+<!-- firebase serve                  //local -->
+<!-- firebase deploy                 //deploy -->
+
+
+<!--    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    https://www.youtube.com/watch?v=LOeioOKUKI8     - firebase nose -express server tutorial!!!!!!!-->
+
+</html>
