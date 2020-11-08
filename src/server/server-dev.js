@@ -73,7 +73,7 @@ app.listen(PORT, () => {
 
 
 // app.post('/getClubsPlayers', jsonParser, (req, res) => {    //test
-app.post('/getClubsPlayers', (req, res) => {
+app.post('/getClubsPlayers', (req, res) => { 
   res.set('content-type', 'application/json');
   res.type('application/json');   // => 'application/json'   //???????
   let name = req.body.name;
